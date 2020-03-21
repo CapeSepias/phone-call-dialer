@@ -9,8 +9,10 @@ This plug-in illustrates how to use the intents API, in Android, to automaticall
 ## Features
 
 * Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
-* If the dailer app is successfully launched, the field's response will be stored as:  
-    > The following phone number was called: [phone_number].
+* If the dailer app is successfully launched, the following text will be appended to the field's response:  
+    > [TIMESTAMP] The following phone number was called: [phone_number].
+* If the dailer app cannot be launched, the following text will be appended to the field's response:  
+    > [TIMESTAMP] Failure calling the following phone number: [phone_number].
 
 ## How to use
 
