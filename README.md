@@ -16,7 +16,7 @@ This plug-in illustrates how to use the intents API, in Android, to automaticall
 
 1. Download the test form [extras/test-form](extras/test-form) from this repo and upload it to your SurveyCTO server.
 1. Download the [call-phone-number.fieldplugin.zip](call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
-1. Make sure to provide the correct paramters (see below).
+1. Make sure to provide the correct paramaters (see below).
 
 ## Required parameters
 
