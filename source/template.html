@@ -1,0 +1,42 @@
+<div class="label default-question-text-size">{{{LABEL}}}</div>
+
+<!-- If there is an image specified in the media:image column, show it here -->
+{{#MEDIAIMAGE}}
+<img src="{{MEDIAIMAGE}}" />
+{{/MEDIAIMAGE}}
+
+<!-- If there is audio specified in the media:audio column, show it here -->
+{{#MEDIAAUDIO}}
+<audio controls>
+  <source src="{{MEDIAAUDIO}}">
+  Your browser does not support the audio element.
+</audio>
+{{/MEDIAAUDIO}}
+
+<!-- If there is a video specified in the media:video column, show it here -->
+{{#MEDIAVIDEO}}
+<video width="100%" height="*" controls>
+  <source src="{{MEDIAVIDEO}}">
+  Your browser does not support the video tag.
+</video>
+{{/MEDIAVIDEO}} 
+
+<div class="hint default-hint-text-size">{{{HINT}}}</div>
+
+<p class="text-muted">Phone call preview:</p>
+
+<div class="container">
+   <div class="phone-call-preview-container">
+      <p>
+         <small class="text-muted">Phone number:</small>
+         <div id="phone-preview-number-container"></div>
+      </p>
+   </div>
+</div>
+
+<div class="container">
+   <button {{#READONLY}}disabled{{/READONLY}} id="btn-call-phone"></button>
+   <p class="if-no-intents-support">Sorry, this button will only work on an Android device. Please open this form using SurveyCTO Collect for Android.</p>
+</div>
+
+<div id="status-container"></div>

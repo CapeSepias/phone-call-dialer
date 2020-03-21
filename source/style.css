@@ -1,0 +1,43 @@
+.text-muted {
+	color: rgba(0,0,0,.5);
+}
+.phone-call-preview-container {
+	border: 1px solid #047CC2;
+	border-radius: 4px;
+	padding: 0 .5rem;
+	box-sizing: border-box;
+}
+.container {
+	padding: 0 .5rem;
+}
+button {
+	cursor: pointer;
+	padding: .75rem;
+	border-radius: 4px;
+	background-color: #047CC2;
+	color: white;
+	font-weight: bold;
+	margin-top: 1rem;
+	width: 100%;
+}
+button:hover {
+	background-color: #047CC2;
+}
+button:active {
+	position:relative;
+	top:1px;
+}
+button:disabled {
+	opacity: 0.5
+}
+#status-container {
+    padding: 6px;
+    text-align: center;
+}
+.if-no-intents-support {
+	display: none;
+}
+.web-collect .if-no-intents-support,
+.ios-collect .if-no-intents-support {
+	display: block;
+}
