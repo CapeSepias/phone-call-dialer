@@ -4,7 +4,7 @@
 
 ## Description
 
-This plug-in illustrates how to use the intents API, in Android, to automatically launch the default dialer app on the device. It receives a phone number as parameter, and provides a button to launch the dialer app (using the number from the parameters).
+This field plug-in can dial a phone number for you in SurveyCTO Collect on Android. It receives a phone number as parameter, and provides a button to launch the dialer app (using the number from the parameters). This can be useful in CATI (computer assisted telephone interviews) surveys to save time and ensure the correct phone number is used.
 
 ## Features
 
@@ -20,12 +20,12 @@ This plug-in illustrates how to use the intents API, in Android, to automaticall
 1. Download the [call-phone-number.fieldplugin.zip](call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct paramaters (see below).
 
-## Required parameters
+## Parameters
 
 | Key | Value |
 | --- | --- |
-| `phone_number` | The phone number to dial. |
-| `button_label` | The label of the button used to make the phone call. |
+| `phone_number` (required) | The phone number to dial. |
+| `button_label` (optional) | The label of the button used to make the phone call. If no `button_label` parameter is specified, the button will be labeled "Click here to call". |
 
 *Note: it is suggested to use values stored in other fields for the parameters. Take a look at the test form to see how this is accomplished.
 
