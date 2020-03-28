@@ -6,6 +6,8 @@
 
 This field plug-in can dial a phone number for you in SurveyCTO Collect on Android. It receives a phone number as parameter, and provides a button to launch the dialer app (using the number from the parameters). This can be useful in CATI (computer assisted telephone interviews) surveys to save time and ensure the correct phone number is used.
 
+[![Download now](extras/download-button.png)](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip)
+
 ## Features
 
 * Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
@@ -16,8 +18,8 @@ This field plug-in can dial a phone number for you in SurveyCTO Collect on Andro
 
 ## How to use
 
-1. Download the test form [extras/test-form](extras/test-form) from this repo and upload it to your SurveyCTO server.
-1. Download the [call-phone-number.fieldplugin.zip](call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Download the test form [extras/test-form](https://github.com/surveycto/call-phone-number/raw/master/extras/test-form/Call%20phone%20number.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [call-phone-number.fieldplugin.zip](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
 1. Make sure to provide the correct paramaters (see below).
 
 ## Parameters
@@ -32,6 +34,10 @@ This field plug-in can dial a phone number for you in SurveyCTO Collect on Andro
 ## More resources
 
 * **Test form**  
-[extras/test-form](extras/test-form)
-* **Developer documentation for field plug-ins**  
-More instructions for developing and using field plug-ins. [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+[extras/test-form](https://github.com/surveycto/call-phone-number/raw/master/extras/test-form/Call%20phone%20number.xlsx)
+* **Developer documentation**  
+Instructions and resources for developing your own field plug-ins.  
+[https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
+* **User documentation**  
+How to get started using field plug-ins in your SurveyCTO form.  
+[https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html](https://docs.surveycto.com/02-designing-forms/03-advanced-topics/06.using-field-plug-ins.html)
