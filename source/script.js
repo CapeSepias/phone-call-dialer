@@ -10,11 +10,20 @@ var currentAnswer = fieldProperties.CURRENT_ANSWER || "";
 previewNumberContainer.innerHTML = phoneNumber;
 btnCallPhone.innerText = buttonLabel || "Click here to call"; 
 if (!isAndroid) {
-    btnCallPhone.disabled = true;
+    //btnCallPhone.disabled = true;
 }
 
 // define what the "Call phone" button does
-btnCallPhone.onclick = function() {
+if (isAndroid) {
+    btnCallPhone.onclick = function() {
+        launchCallUsingAndroidIntent();
+    }
+} else {
+    btnCallPhone.setAttribute("href", "tel:" + phoneNumber);
+}
+
+
+function launchCallUsingAndroidIntent() {
     // set the parameters for the intent
     var params = {
         uri_data: 'tel:' + phoneNumber
