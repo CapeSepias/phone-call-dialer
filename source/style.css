@@ -1,11 +1,34 @@
-.phone-call-preview-container {
-	border: 1px solid #047CC2;
-	border-radius: 4px;
-	padding: 0 .5rem;
-	box-sizing: border-box;
+/* START global styles */
+.hidden {
+	display: none;
+}
+.text-muted {
+	color: rgba(0,0,0,.5);
+}
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Opera and Firefox */
 }
 .container {
-	padding: 0 .5rem;
+	padding: 1rem;
+	box-sizing: border-box;
+}
+.center {
+	text-align: center;
+	justify-content: center;
+}
+/* END global styles */
+
+.phone-call-preview-container {
+	padding: 1rem;
+	box-sizing: border-box;
+	font-size: 2rem;
+	font-weight: bold;
 }
 
 /* START button styles */
@@ -16,7 +39,6 @@ a.button {
 	background-color: #047CC2;
 	color: white;
 	font-weight: bold;
-	margin-top: 1rem;
 	width: 100%;
 	display: block;
 	box-sizing: border-box;
@@ -34,24 +56,7 @@ a.button:disabled {
 	opacity: 0.5
 }
 #status-container {
-    padding: 6px;
-    text-align: center;
+	padding: 6px;
+	text-align: center;
 }
 /* END button styles */
-
-/* START global styles */
-.hidden {
-	display: none;
-}
-.text-muted {
-	color: rgba(0,0,0,.5);
-}
-.noselect {
-  -webkit-touch-callout: none; /* iOS Safari */
-    -webkit-user-select: none; /* Safari */
-     -khtml-user-select: none; /* Konqueror HTML */
-       -moz-user-select: none; /* Old versions of Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-            user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome, Opera and Firefox */
-}
