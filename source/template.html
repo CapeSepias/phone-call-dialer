@@ -8,40 +8,40 @@
 <!-- If there is audio specified in the media:audio column, show it here -->
 {{#MEDIAAUDIO}}
 <audio controls>
-   <source src="{{MEDIAAUDIO}}">
-   Your browser does not support the audio element.
+  <source src="{{MEDIAAUDIO}}">
+  Your browser does not support the audio element.
 </audio>
 {{/MEDIAAUDIO}}
 
 <!-- If there is a video specified in the media:video column, show it here -->
 {{#MEDIAVIDEO}}
 <video width="100%" height="*" controls>
-   <source src="{{MEDIAVIDEO}}">
-   Your browser does not support the video tag.
+  <source src="{{MEDIAVIDEO}}">
+  Your browser does not support the video tag.
 </video>
 {{/MEDIAVIDEO}} 
 
 <div class="hint default-hint-text-size" dir="auto">{{{HINT}}}</div>
 
 <div class="container center" style="margin-top: 2rem;">
-   <svg class="icon" height="36" width="36"><use xlink:href="#icon-make-call" /></svg>
+  <svg class="icon" height="36" width="36"><use xlink:href="#icon-make-call" /></svg>
 </div>
 
 <div class="container">
-   <div class="phone-call-preview-container center">
-      <div id="phone-preview-number-container"></div>
-   </div>
+  <div class="phone-call-preview-container center">
+    <div id="phone-preview-number-container"></div>
+  </div>
 </div>
 
 <div class="container">
-   <a class="button noselect" {{#READONLY}}disabled{{/READONLY}} id="btn-call-phone" dir="auto"></a>
+  <a class="button noselect" {{#READONLY}}disabled{{/READONLY}} id="btn-call-phone" dir="auto"></a>
 </div>
 
 <div id="status-container"></div>
 
 <!-- Below are the definitions of the SVG icons that we have used in the rest of the template. -->
 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-   <symbol id="icon-make-call" viewBox="0 0 24 24">
-      <path d="M5.00055556,10.3288889 C6.84055556,13.945 9.805,16.8966667 13.4211111,18.7494444 L16.2322222,15.9383333 C16.5772222,15.5933333 17.0883333,15.4783333 17.5355556,15.6316667 C18.9666667,16.1044444 20.5127778,16.36 22.0972222,16.36 C22.8,16.36 23.375,16.935 23.375,17.6377778 L23.375,22.0972222 C23.375,22.8 22.8,23.375 22.0972222,23.375 C10.0988889,23.375 0.375,13.6511111 0.375,1.65277778 C0.375,0.95 0.95,0.375 1.65277778,0.375 L6.125,0.375 C6.82777778,0.375 7.40277778,0.95 7.40277778,1.65277778 C7.40277778,3.25 7.65833333,4.78333333 8.13111111,6.21444444 C8.27166667,6.66166667 8.16944444,7.16 7.81166667,7.51777778 L5.00055556,10.3288889 Z" id="icon/communication/call_24px" fill-rule="nonzero" fill="#047CC2"></path>
-   </symbol>
+  <symbol id="icon-make-call" viewBox="0 0 24 24">
+    <path d="M5.00055556,10.3288889 C6.84055556,13.945 9.805,16.8966667 13.4211111,18.7494444 L16.2322222,15.9383333 C16.5772222,15.5933333 17.0883333,15.4783333 17.5355556,15.6316667 C18.9666667,16.1044444 20.5127778,16.36 22.0972222,16.36 C22.8,16.36 23.375,16.935 23.375,17.6377778 L23.375,22.0972222 C23.375,22.8 22.8,23.375 22.0972222,23.375 C10.0988889,23.375 0.375,13.6511111 0.375,1.65277778 C0.375,0.95 0.95,0.375 1.65277778,0.375 L6.125,0.375 C6.82777778,0.375 7.40277778,0.95 7.40277778,1.65277778 C7.40277778,3.25 7.65833333,4.78333333 8.13111111,6.21444444 C8.27166667,6.66166667 8.16944444,7.16 7.81166667,7.51777778 L5.00055556,10.3288889 Z" id="icon/communication/call_24px" fill-rule="nonzero" fill="#047CC2"></path>
+  </symbol>
 </svg>
