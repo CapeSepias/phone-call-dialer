@@ -4,7 +4,7 @@
 
 ## Description
 
-This field plug-in can dial a phone number for you in SurveyCTO Collect on Android. It receives a phone number as parameter, and provides a button to launch the dialer app (using the number from the parameters). This can be useful in CATI (computer assisted telephone interviews) surveys to save time and ensure the correct phone number is used.
+This field plug-in can dial a phone number for you in SurveyCTO Collect on Android and iOS. It receives a phone number as parameter, and provides a button to launch the dialer app (using the number from the parameters). This can be useful in CATI (computer assisted telephone interviews) surveys to save time and ensure the correct phone number is used.
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip)
 
