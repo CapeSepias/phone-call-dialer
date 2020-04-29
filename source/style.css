@@ -2,9 +2,11 @@
 .hidden {
 	display: none;
 }
+
 .text-muted {
 	color: rgba(0,0,0,.5);
 }
+
 .noselect {
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -14,10 +16,12 @@
             user-select: none; /* Non-prefixed version, currently
                                   supported by Chrome, Opera and Firefox */
 }
+
 .container {
 	box-sizing: border-box;
 	padding: 1rem;
 }
+
 .center {
 	justify-content: center;
 	text-align: center;
@@ -45,16 +49,20 @@ a.button {
 	text-decoration: none;
 	width: 100%;
 }
+
 a.button:hover {
 	background-color: #047CC2;
 }
+
 a.button:active {
 	position:relative;
 	top:1px;
 }
+
 a.button:disabled {
 	opacity: 0.5
 }
+
 #status-container {
 	padding: 6px;
 	text-align: center;
