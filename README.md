@@ -10,17 +10,25 @@ This field plug-in can dial a phone number for you in SurveyCTO Collect on Andro
 
 ## Features
 
-* Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
-* If the dailer app is successfully launched, the following text will be appended to the field's response:  
-    > [TIMESTAMP] The following phone number was called: [phone_number].
-* If the dailer app cannot be launched, the following text will be appended to the field's response:  
-    > [TIMESTAMP] Failure calling the following phone number: [phone_number].
+* Supports the `text` field type, but doesn't provide an actual text input. 
+
+## How the response is stored
+
+> [`TIMESTAMP`] The following phone number was called:  `phone_number`.
+
+* This response will use the `phone_number` value from the parameter, and `TIMESTAMP` will be the current date and time.
+* If you're using iOS or web forms, this response will be appended to the response (on a new line) whenever the main button is clicked.
+* If you're using Android, this response will be appended to the response (on a new line) if the dialer app was successfully launched.
+
+> [`TIMESTAMP`] Failure calling the following phone number: `phone_number`.
+
+* If you're using Android, the above response will be appended to the current response (on a new line) if there was an error launching the dialer app.
 
 ## How to use
 
 1. Download the test form [extras/test-form](https://github.com/surveycto/call-phone-number/raw/master/extras/test-form/Call%20phone%20number.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [call-phone-number.fieldplugin.zip](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
-1. Make sure to provide the correct paramaters (see below).
+1. Make sure to provide the correct parameters (see below).
 
 ## Parameters
 
