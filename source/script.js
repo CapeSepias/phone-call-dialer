@@ -9,9 +9,6 @@ var currentAnswer = fieldProperties.CURRENT_ANSWER || ''
 // set the preview values to show what has been passed from the parameters
 previewNumberContainer.innerHTML = phoneNumber
 btnCallPhone.innerText = buttonLabel || 'Click here to call'
-if (!isAndroid) {
-  // btnCallPhone.disabled = true
-}
 
 // define what the 'Call phone' button does
 if (isAndroid) {
