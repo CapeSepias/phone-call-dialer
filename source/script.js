@@ -1,3 +1,5 @@
+/* global getPluginParameter, fieldProperties, launchIntent, setAnswer */
+
 var isAndroid = (document.body.className.indexOf('android-collect') >= 0)
 var phoneNumber = getPluginParameter('phone_number')
 var buttonLabel = getPluginParameter('button_label')
