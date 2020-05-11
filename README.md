@@ -11,16 +11,16 @@ This field plug-in can dial a phone number for you in SurveyCTO Collect on Andro
 ## Features
 
 * Supports the `text` field type, but doesn't provide an actual text input. The response that gets recorded in your form data will be based on the parameters.
-* If the dailer app is successfully launched, the following text will be appended to the field's response:  
+* If the dialer app is successfully launched, the following text will be appended to the field's response:  
     > [TIMESTAMP] The following phone number was called: [phone_number].
-* If the dailer app cannot be launched, the following text will be appended to the field's response:  
+* If the dialer app cannot be launched, the following text will be appended to the field's response:  
     > [TIMESTAMP] Failure calling the following phone number: [phone_number].
 
 ## How to use
 
 1. Download the test form [extras/test-form](https://github.com/surveycto/call-phone-number/raw/master/extras/test-form/Call%20phone%20number.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [call-phone-number.fieldplugin.zip](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
-1. Make sure to provide the correct paramaters (see below).
+1. Make sure to provide the correct parameters (see below).
 
 ## Parameters
 
