@@ -6,13 +6,13 @@
 
 This field plug-in can dial a phone number for you in SurveyCTO Collect. Simply supply a valid phone number as a parameter (see the sample form for an example), and this field plug-in will allow you to dial that phone number automatically. This can be useful in CATI (computer assisted telephone interviews) surveys to save time and ensure the correct phone number is used.
 
-For a more detailed guide to the **phone-call-dialer** field plug-in, see [the wiki](https://github.com/surveycto/call-phone-number/wiki/Guide-to-the-%22call-phone-number%22-field-plug-in).
+For a more detailed guide to the **phone-call-dialer** field plug-in, see [the wiki](https://github.com/surveycto/phone-call-dialer/wiki/Guide-to-the-%22phone-call-dialer%22-field-plug-in).
 
-[![Download now](extras/download-button.png)](https://github.com/surveycto/call-phone-number/raw/master/call-phone-number.fieldplugin.zip)
+[![Download now](extras/download-button.png)](https://github.com/surveycto/phone-call-dialer/raw/master/phone-call-dialer.fieldplugin.zip)
 
 ## Features
 
-* Supports the `text` field type, but doesn't provide an actual text input. 
+* Supports the `text` field type, but doesn't provide an actual text input.
 
 ## How the response is stored
 
@@ -28,8 +28,8 @@ For a more detailed guide to the **phone-call-dialer** field plug-in, see [the w
 
 ## How to use
 
-1. Download the sample form [extras/sample-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/test-form/Call%20phone%20number.xlsx) from this repo and upload it to your SurveyCTO server.
-1. Download the [phone-call-dialer.fieldplugin.zip](https://github.com/surveycto/phone-call-dialer/raw/master/phone-call-dialer.fieldplugin.zip) file from this repo, and attach it to the test form on your SurveyCTO server.
+1. Download the sample form [extras/sample-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/sample-form/Phone%20call%20dialer.xlsx) from this repo and upload it to your SurveyCTO server.
+1. Download the [phone-call-dialer.fieldplugin.zip](https://github.com/surveycto/phone-call-dialer/raw/master/phone-call-dialer.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
 1. Make sure to provide the correct parameters (see below).
 
 ## Parameters
@@ -44,9 +44,9 @@ For a more detailed guide to the **phone-call-dialer** field plug-in, see [the w
 ## More resources
 
 * **Sample form**  
-[extras/test-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/test-form/Call%20phone%20number.xlsx)
+[extras/test-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/sample-form/Phone%20call%20dialer.xlsx)
 * **Wiki guide**
-[Wiki guide](https://github.com/surveycto/call-phone-number/wiki/Guide-to-the-%22call-phone-number%22-field-plug-in)
+[Wiki guide](https://github.com/surveycto/phone-call-dialer/wiki/Guide-to-the-%22phone-call-dialer%22-field-plug-in)
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
 [https://github.com/surveycto/Field-plug-in-resources](https://github.com/surveycto/Field-plug-in-resources)
