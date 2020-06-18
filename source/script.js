@@ -13,12 +13,32 @@ previewNumberContainer.innerHTML = phoneNumber
 btnCallPhone.innerText = buttonLabel || 'Click here to call'
 
 // define what the 'Call phone' button does
-if (isAndroid) {
-  btnCallPhone.onclick = function () {
-    launchCallUsingAndroidIntent()
+if (!fieldProperties.READONLY) {
+  if (isAndroid) {
+    btnCallPhone.onclick = function () {
+      launchCallUsingAndroidIntent()
+    }
+  } else {
+    btnCallPhone.setAttribute('href', 'tel:' + phoneNumber)
+    btnCallPhone.onclick = function () {
+      saveResponse('success')
+    }
   }
 } else {
-  btnCallPhone.setAttribute('href', 'tel:' + phoneNumber)
+  btnCallPhone.classList.add('disabled')
+}
+
+// Define how to store the response
+function saveResponse (result) {
+  if (result === 'success') {
+    var successResponse = '[' + new Date().toLocaleString() + '] The following phone number was called: ' + phoneNumber + '.\n'
+    currentAnswer += successResponse
+    setAnswer(currentAnswer)
+  } else {
+    var failResponse = '[' + new Date().toLocaleString() + '] Failure calling the following phone number: ' + phoneNumber + '.\n'
+    currentAnswer += failResponse
+    setAnswer(currentAnswer)
+  }
 }
 
 function launchCallUsingAndroidIntent () {
@@ -30,12 +50,10 @@ function launchCallUsingAndroidIntent () {
   launchIntent('android.intent.action.DIAL', params, function (error, result) {
     // Something went wrong while launching the intent.
     if (error) {
-      currentAnswer += '[' + new Date().toLocaleString() + '] Failure calling the following phone number: ' + phoneNumber + '.\n'
-      setAnswer(currentAnswer)
+      saveResponse(error)
       statusContainer.innerHTML = error
     } else {
-      currentAnswer += '[' + new Date().toLocaleString() + '] The following phone number was called: ' + phoneNumber + '.\n'
-      setAnswer(currentAnswer)
+      saveResponse('success')
       statusContainer.innerHTML = 'Success!'
     }
   })
