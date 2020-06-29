@@ -45,7 +45,7 @@ For a more detailed guide to the **phone-call-dialer** field plug-in, see [the w
 
 * **Sample form**  
 [extras/test-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/sample-form/Phone%20call%20dialer.xlsx)
-* **Wiki guide**
+* **Wiki guide**  
 [Wiki guide](https://github.com/surveycto/phone-call-dialer/wiki/Guide-to-the-%22phone-call-dialer%22-field-plug-in)
 * **Developer documentation**  
 Instructions and resources for developing your own field plug-ins.  
