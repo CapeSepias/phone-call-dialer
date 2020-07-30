@@ -1,6 +1,6 @@
 # Phone call dialer
 
-![](extras/phone-call-dialer.jpg)
+![Screenshot](extras/phone-call-dialer.jpg)
 
 ## Description
 
@@ -10,29 +10,37 @@ For a more detailed guide to the **phone-call-dialer** field plug-in, see [the w
 
 [![Download now](extras/download-button.png)](https://github.com/surveycto/phone-call-dialer/raw/master/phone-call-dialer.fieldplugin.zip)
 
-## Features
+### Features
 
-* Supports the `text` field type, but doesn't provide an actual text input.
+* **Dial a phone number**  
+  Can be used to automatically dial a phone number that is defined by the form. For example, a number can be supplied from an attached dataset.
 
-## How the response is stored
+### Data format
 
-> [`TIMESTAMP`] The following phone number was called:  `phone_number`.
+This field plug-in requires the `text` field type.
 
-* This response will use the `phone_number` value from the parameter, and `TIMESTAMP` will be the current date and time.
-* If you're using iOS or web forms, this response will be appended to the response (on a new line) whenever the main button is clicked.
-* If you're using Android, this response will be appended to the response (on a new line) if the dialer app was successfully launched.
+A record of the call attempts are stored as the field's response in the following format:
 
-> [`TIMESTAMP`] Failure calling the following phone number: `phone_number`.
+* If the call was successful, the response will be:
+  > [`TIMESTAMP`] The following phone number was called:  `phone_number`.
+* If there was a call error, the response will be:
+  > [`TIMESTAMP`] Failure calling the following phone number: `phone_number`.
 
-* If you're using Android, the above response will be appended to the current response (on a new line) if there was an error launching the dialer app.
+Please note:
+
+* Multiple calls made with this field plug-in will all be recorded in the response, each on their own line.
+* If `hide_phone_number=1`, then the phone number will not appear in the response data. It will instead show the `phone_number_label` (if one is supplied).
+* If you're using this field plug-in on iOS or web forms, then simply clicking the *CALL* button is considered a success (there is no error callback).
 
 ## How to use
+
+### Getting started
 
 1. Download the sample form [extras/sample-form](https://github.com/surveycto/phone-call-dialer/raw/master/extras/sample-form/Phone%20call%20dialer.xlsx) from this repo and upload it to your SurveyCTO server.
 1. Download the [phone-call-dialer.fieldplugin.zip](https://github.com/surveycto/phone-call-dialer/raw/master/phone-call-dialer.fieldplugin.zip) file from this repo, and attach it to the sample form on your SurveyCTO server.
 1. Make sure to provide the correct parameters (see below).
 
-## Parameters
+### Parameters
 
 | Key | Value |
 | --- | --- |
